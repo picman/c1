@@ -11,10 +11,7 @@ jobs:
       - name: Build
         run: |
           gcc main.c
-      - name: Test
+      - name: Install 
         run: |
-          ./a.out
-      - name: Cleanup
-        run: |
-          cd ..
-          rm -rf c1
+          mkdir /home/picman/Downloads/opt 
+   	  cp a.out /home/picman/Downloads/opt/
