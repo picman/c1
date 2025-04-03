@@ -14,4 +14,4 @@ jobs:
       - name: Install 
         run: |
           mkdir /home/picman/Downloads/opt 
-   	  cp a.out /home/picman/Downloads/opt/
+          cp a.out /home/picman/Downloads/opt/
