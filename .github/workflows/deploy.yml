@@ -13,7 +13,7 @@ jobs:
           gcc main.c
       - name: Test
         run: |
-        ./a.out
+          ./a.out
       - name: Cleanup
         run: |
           cd ..
