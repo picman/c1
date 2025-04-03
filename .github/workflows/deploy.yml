@@ -1,20 +1,20 @@
 name: "Deploy"
 on:
-	push:
-		branches: ["main"]
+  push:
+    branches: ["main"]
 jobs:
-	deployment:
-		runs-on: self-hosted
-	steps:
-		- name: Checkout the code 
-		  uses: actions/checkout@v4
-		- name: Build
-		  run: |
-			gcc main.c
-		- name: Test
-		  run: |
-			./a.out
-		- name: Cleanup
-		  run: |
-			cd ..
-			rm -rf c1
+  deployment:
+    runs-on: self-hosted
+  steps:
+    - name: Checkout the code 
+      uses: actions/checkout@v4
+    - name: Build
+      run: |
+        gcc main.c
+    - name: Test
+      run: |
+        ./a.out
+    - name: Cleanup
+      run: |
+        cd ..
+        rm -rf c1
